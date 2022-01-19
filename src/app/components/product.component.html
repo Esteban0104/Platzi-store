@@ -1,0 +1,14 @@
+
+
+
+<div class="center">
+    <h3>{{ product.title }}</h3>
+    <img [src]="product.image" alt="">
+    <div class="product">
+    <strong>{{product.price }}</strong>
+</div>
+</div>
+
+<div class="boton">
+    <button (click)="addCart()">Agregar al carrito</button>
+</div>
