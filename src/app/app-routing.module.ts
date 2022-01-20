@@ -9,15 +9,12 @@ import {ProductDetailComponent} from './product-detail/product-detail.component'
 
 const routes: Routes = [
     {
-
       path:'',
       redirectTo: '/home',
       pathMatch:'full'
 
     },
-  
   {
-    
   path: 'home',
 component: HomeComponent
   },
@@ -26,7 +23,7 @@ component: HomeComponent
   component: ProductsComponent
     },
     {
-      path: 'product/:id',
+      path: 'products/:id',
     component: ProductDetailComponent
       },
     {

@@ -8,14 +8,15 @@ import {ActivatedRoute, Params} from '@angular/router';
 export class ProductDetailComponent implements OnInit {
 
   constructor(
+
     private route: ActivatedRoute
+
 ) { }
 
 ngOnInit(): void {
   this.route.params.subscribe((params: Params) => {
      const id = params['id'];
     console.log(id);
-
   });
 }
 }
