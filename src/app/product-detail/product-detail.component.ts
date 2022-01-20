@@ -11,15 +11,13 @@ export class ProductDetailComponent implements OnInit {
     private route: ActivatedRoute
 ) { }
 
-  ngOnInit(): void {
+ngOnInit(): void {
+  this.route.params.subscribe((params: Params) => {
+     const id = params['id'];
+    console.log(id);
 
-    this.route.params.subscribe((params: Params ) => {
-      const id = params['id']; 
-      console.log(id);
-
-
-    });
-
-  }
-
+  });
 }
+}
+
+
