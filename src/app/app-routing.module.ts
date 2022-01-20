@@ -5,6 +5,7 @@ import {ProductsComponent} from './products/products.component';
 import {ContactsComponent} from './contacts/contacts.component';
 import {DemoComponent} from './demo/demo.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
+import {ProductDetailComponent} from './product-detail/product-detail.component';
 
 const routes: Routes = [
     {
@@ -25,6 +26,10 @@ component: HomeComponent
   component: ProductsComponent
     },
     {
+      path: 'product/:id',
+    component: ProductDetailComponent
+      },
+    {
       path: 'contacts',
     component: ContactsComponent
       },
@@ -36,9 +41,7 @@ component: HomeComponent
       {
         path: '**',
         component: PageNotFoundComponent
-
-
-
+      
       }
     
 ];
