@@ -1,40 +1,26 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+import {CommonModule} from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductComponent } from './components/product.component';
-import { ExponentialPipe } from './exponential.pipe';
-import { CartComponent } from './cart/cart.component';
-import { HomeComponent } from './home/home.component';
-import { ProductsComponent } from './products/products.component';
-import { ContactsComponent } from './contacts/contacts.component';
-import { DemoComponent } from './demo/demo.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { BannerComponent } from './banner/banner.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { LayoutComponent } from './layout/layout.component';
+
+import { SharedModule } from './shared/shared.module';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent,
-    ExponentialPipe,
-    CartComponent,
-    HomeComponent,
-    ProductsComponent,
-    ContactsComponent,
-    DemoComponent,
-    HeaderComponent,
-    FooterComponent,
-    BannerComponent,
-    PageNotFoundComponent
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    SharedModule,
+    CoreModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
