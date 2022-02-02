@@ -1,7 +1,11 @@
 @import '~@angular/material/theming';
 
 $primary: mat-palette($mat-indigo);
-
+.container {
+    max-width: 1110px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
 footer {
   padding: 50px 0px;
   margin-top: 20px;
