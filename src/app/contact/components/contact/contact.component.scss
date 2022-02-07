@@ -3,12 +3,30 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 2;
-   
+    grid-column-gap: 30px;
 }
 
 .form {
 
-    margin-top: 110px;
-    
+    margin-top: 55px;
+}
+
+.center{
+    text-align: center;
+}
+
+.imagen {
+
+    width: 60%;
+  height: 100%;
 
 }
+
+.medio {
+    margin:10px auto;
+	display:block;
+    width: 250px;
+
+}
+
+
