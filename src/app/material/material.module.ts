@@ -11,6 +11,10 @@ import {MatInputModule} from '@angular/material/input';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import {MatDialogModule} from '@angular/material/dialog';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+
+
 
 @NgModule({
   declarations: [],
@@ -18,7 +22,11 @@ import {MatDialogModule} from '@angular/material/dialog';
     CommonModule,
     MatButtonModule,
     MatToolbarModule,
-    MatDividerModule
+    MatDividerModule,
+    MatDialogModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatInputModule
 
   ],
   exports: [
@@ -32,7 +40,10 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatInputModule,
     MatDividerModule,
     MatListModule,
-    MatDialogModule
+    MatDialogModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatInputModule
     
   ]
 })
