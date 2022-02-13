@@ -30,7 +30,8 @@ import { ModalModule } from './modal/modal.module';
     CoreModule,
     CommonModule,
     BrowserAnimationsModule,
-    ModalModule
+    ModalModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
