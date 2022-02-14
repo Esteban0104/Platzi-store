@@ -5,9 +5,11 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
+      <a mat-list-item routerLink="/admin/dashboard">Home&nbsp;<mat-icon>home</mat-icon></a>
       <a mat-list-item routerLink="/admin/create">Agregar producto&nbsp;<mat-icon>add_circle_outline</mat-icon> </a>
-      <a mat-list-item routerLink="/admin/table">Tablas&nbsp;<mat-icon>filter_list</mat-icon></a>
-      <a mat-list-item routerLink="/admin/dashboard">Dashboard&nbsp;<mat-icon>bar_chart</mat-icon></a>
+      <a mat-list-item routerLink="/admin/table">Inventario&nbsp;<mat-icon>local_shipping</mat-icon></a>
+      <a mat-list-item routerLink="/admin/products">productos&nbsp;<mat-icon>storefront</mat-icon></a>
+      
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

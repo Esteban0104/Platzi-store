@@ -13,6 +13,13 @@ import {MatListModule} from '@angular/material/list';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
+import {MatTableModule} from '@angular/material/table';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSortModule } from '@angular/material/sort';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatPaginatorModule } from '@angular/material/paginator';
+
+
 
 
 
@@ -22,11 +29,23 @@ import { MatRadioModule } from '@angular/material/radio';
     CommonModule,
     MatButtonModule,
     MatToolbarModule,
+    MatBadgeModule,
+    MatIconModule,
+    MatCardModule,
+    MatGridListModule,
+    MatFormFieldModule,
+    MatInputModule,
     MatDividerModule,
+    MatListModule,
     MatDialogModule,
-    MatRadioModule,
     MatSelectModule,
-    MatInputModule
+    MatRadioModule,
+    MatInputModule,
+    MatTableModule,
+    MatSidenavModule,
+    MatMenuModule,
+    MatSortModule,
+    MatPaginatorModule
 
   ],
   exports: [
@@ -43,7 +62,12 @@ import { MatRadioModule } from '@angular/material/radio';
     MatDialogModule,
     MatSelectModule,
     MatRadioModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule,
+    MatSidenavModule,
+    MatMenuModule,
+    MatSortModule,
+    MatPaginatorModule
     
   ]
 })

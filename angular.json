@@ -60,6 +60,7 @@
               ],
               "outputHashing": "all"
             },
+            
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -68,7 +69,9 @@
               "sourceMap": true,
               "namedChunks": true
             }
+            
           },
+          
           "defaultConfiguration": "production"
         },
         "serve": {
