@@ -29,7 +29,20 @@ export class ProductDetailComponent implements OnInit {
     .subscribe(product =>{
       this.product = product;
     });
-    
+  }
+
+  createProduct(){
+    const newProduct: Product ={
+      id: '222',
+      title: 'nuevo desde angular',
+      image: 'assets/images/banner-1.jpg',
+      price: 3000,
+      description: 'Nuevo producto'
+    };
+    this.productsService.createProduct(newProduct)
+    .subscribe(product =>{
+      console.log(product);
+    });
 
   }
 
