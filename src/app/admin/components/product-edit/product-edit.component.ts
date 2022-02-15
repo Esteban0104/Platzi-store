@@ -39,8 +39,8 @@ export class ProductEditComponent implements OnInit {
   }
   saveProduct(event: Event){
     Swal.fire({
-      title: 'Quieres crear el producto',
-      text: "Acepta para crear el producto",
+      title: '¿Quieres editar el producto?',
+      text: "Acepta para confirmar",
       icon: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
@@ -59,8 +59,8 @@ export class ProductEditComponent implements OnInit {
     }
   
         Swal.fire(
-          'Creado!',
-          'Has creado el producto!',
+          'editado!',
+          'Has editado el producto!',
           'success'
         )
       }
