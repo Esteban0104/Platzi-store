@@ -39,7 +39,7 @@
 
         </mat-card-content>
         <mat-card-actions>
-            <button mat-raised-button type="submit" >Guardar</button>
+            <button [disabled]="form.invalid" mat-raised-button type="submit" >Guardar</button>
         </mat-card-actions>
     </mat-card>
    
