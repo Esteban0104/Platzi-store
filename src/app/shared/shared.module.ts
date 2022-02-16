@@ -9,6 +9,11 @@ import { HighlightDirective } from './directives/highlight/highlight.directive';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import {MaterialModule} from './../material/material.module';
+import { CountingProductsPipe } from './pipes/counting/counting-products.pipe';
+import { RemoveDoubleProductsPipe } from './pipes/remove/remove-double-products.pipe';
+
+
+
 
 @NgModule({
   declarations: [
@@ -16,14 +21,22 @@ import {MaterialModule} from './../material/material.module';
     HighlightDirective,
     HeaderComponent,
     FooterComponent,
-    CartComponent
+    CartComponent,
+    CountingProductsPipe,
+    RemoveDoubleProductsPipe,
+
+    
+    
   ],
   exports: [
     ExponentialPipe,
     HighlightDirective,
     HeaderComponent,
     FooterComponent,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CountingProductsPipe,
+    RemoveDoubleProductsPipe
+    
   ],
   imports: [
     CommonModule,
