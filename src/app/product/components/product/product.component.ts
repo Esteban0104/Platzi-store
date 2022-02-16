@@ -7,6 +7,7 @@ import {
   OnDestroy
 } from '@angular/core';
 
+
 import { Product } from '../../../core/models/product.model';
 import {CartService} from './../../../core/services/cart.service';
 
@@ -35,6 +36,8 @@ export class ProductComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     console.log('5. ngOnDestroy');
   }
+
+
 
   addCart() {
     console.log('añadir al carrito');
