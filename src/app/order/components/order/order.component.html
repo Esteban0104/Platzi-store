@@ -5,8 +5,9 @@
             <ng-template matStepLabel>Your products</ng-template>
             <div *ngIf="(products$ | async) as products">
               <!-- No hay productos -->
-              <p *ngIf="products.length === 0">
-                Your cart is empty.
+              <p *ngIf="products.length === 0" class="tienda">
+                <img src="./../../../../assets/images/tienda.webp" alt="" >
+                <b>No tienes ningun producto</b>
               </p>
               <!-- Productos -->
               <mat-card *ngFor="let product of (products|removeDoubleProducts) as productsWithoutDuplicates">
@@ -36,12 +37,61 @@
             </div>
           </form>
     </mat-step>
-    <mat-step>
+    
+    <!-- Formulario -->
+    <div class="parent" *ngIf="(products$ | async) as products">
+    <mat-step *ngIf="products.length >=1">
         <ng-template matStepLabel>Datos personales</ng-template>
-        
+       
+           <div class="Formulario">
+            <form class="example-form">
+              
+              <h1 style="text-align: center;">Formulario de contacto</h1>
+              
+                <table class="example-full-width" cellspacing="0"><tr>
+                  <td>
+                   
+                    <mat-form-field style="width: 400px;" class="example-full-width" appearance="fill">
+                    <mat-label>Nombres y apellidos</mat-label>
+                    <input matInput>
+                    
+                  </mat-form-field></td>
+                  
+                  </table>
+                  
+                <table class="example-full-width" cellspacing="0"><tr>
+                  <td><mat-form-field style="width: 400px;" class="example-full-width" appearance="fill">
+                    <mat-label>Telefono</mat-label>
+                    <input matInput placeholder="+571234567890">
+                  </mat-form-field></td>
+                </table>
+                <table>
+                  <td><mat-form-field style="width: 400px;" class="example-full-width" appearance="fill">
+                    <mat-label>Gmail</mat-label>
+                    <input matInput #Gmail placeholder="example@gmail.com" value="">
+                    <mat-hint align="end"></mat-hint>
+                  </mat-form-field>
+                </td>
+                <tr>
+                    <mat-form-field style="width: 400px;" class="example-full-width" appearance="fill">
+                        <mat-label>Message</mat-label>
+                        <input matInput #message maxlength="256" placeholder="Necesito información sobre...">
+                        <mat-hint align="start"><strong>No uses información personal</strong> </mat-hint>
+                        <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+                      </mat-form-field>
+                </tr>
+
+                </table>
+              </form>
+              
+            </div>
     </mat-step>
-    <mat-step>
-        <ng-template matStepLabel>Pago</ng-template>
-        
+</div>
+<div class="parent" *ngIf="(products$ | async) as products">
+    <mat-step *ngIf="products.length >=1">
+
+        <ng-template matStepLabel>Informacion del envio</ng-template>
+        <p>PRODUCTS</p>
     </mat-step>
+</div>
 </mat-horizontal-stepper>
