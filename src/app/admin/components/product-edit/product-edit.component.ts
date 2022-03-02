@@ -24,7 +24,8 @@ export class ProductEditComponent implements OnInit {
   private router: Router,
   private activatedRoute: ActivatedRoute
     
-  ) { 
+  ) 
+  { 
     this.buildForm();
   }
 

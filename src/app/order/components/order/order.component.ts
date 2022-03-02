@@ -10,6 +10,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./order.component.scss']
 })
 export class OrderComponent implements OnInit {
+
   products$!: Observable<Product[]>;
   firstFormGroup: FormGroup;
 
@@ -18,7 +19,7 @@ export class OrderComponent implements OnInit {
     private _formBuilder: FormBuilder
   ) {
     this.products$ = this._cartService.cart$;
-    this.firstFormGroup = {} as FormGroup;
+      this.firstFormGroup = {} as FormGroup;
   }
 
   ngOnInit(): void {
@@ -27,7 +28,7 @@ export class OrderComponent implements OnInit {
 
   addCart(product: Product): void {
     console.log('Agregar al carrito');
-    this._cartService.addCart(product);
+      this._cartService.addCart(product);
   }
 
   /**
